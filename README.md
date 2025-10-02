@@ -117,8 +117,49 @@ The Examination System allows the organization to create, manage, and conduct ex
 - Logging handled via StreamWriter in overridden Add() method.  
 
 ---------------------------------
+📂 File Structure
+/ExaminationSystemProject/ConsoleApp
+├── Program.cs              # Entry point (Main method)
+├── Question.cs             # Abstract base class for questions
+├── TrueFalseQuestion.cs    # Derived question type
+├── ChooseOneQuestion.cs    # Derived question type
+├── ChooseAllQuestion.cs    # Derived question type
+├── Answer.cs               # Represents a single answer
+├── AnswerList.cs           # Represents list of answers
+├── QuestionList.cs         # Custom List<Question> with file logging
+├── Subject.cs              # Represents subject details
+├── Exam.cs                 # Abstract base exam
+├── PracticeExam.cs         # Derived exam type
+├── FinalExam.cs            # Derived exam type
+├── ExamMode.cs             # Enum for exam states
+├── Student.cs              # notify Student that Exam is starting
 
-📞 Contact:
+---------------------------------
+
+⚙️ Example Run
+Choose Exam Type: 1- Practice  2- Final
+> 1
+
+Exam: Practice Exam
+Q1: 2 + 2 = 4
+   - True
+   - False
+Correct Answer: True
+
+Q2: Capital of France?
+   - Berlin
+   - Paris
+   - Madrid
+Correct Answer: Paris
+----------------------------
+
+🚀 Technologies Used
+Language: C#
+Framework: .NET Console Application
+Concepts: OOP (inheritance, polymorphism, abstraction), Generics, Interfaces, Events, File Handling
+--------------------
+
+👩‍💻 Author:
 ------------------
 👩 Name: Samaa Abdelmged Roshdy 
 📱 Number: 01014504030  
